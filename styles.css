@@ -1,1 +1,59 @@
+.navbar{
+  color: white;
+}
+.navbar-brand{
+  text-align: left;
+  padding-left: 19rem;
+  color: white !important;
+  font-weight: bold;
+}
+.card-border{
+ border-left: 2px solid black;
+ 
+}
+#nowPlaying{
+  text-align: left;
+  padding-left: 3.5rem;
+}
+#genre{
+  text-align: left;
+  padding-left: 6rem;
+}
+.rating{
+  position: relative;
+  display: flex;
 
+}
+
+.capital-text {
+  text-transform: uppercase;
+}
+#checkHeading{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#formBody{
+  width: 940px;
+  border: 2px solid black;
+  padding: 8px; 
+}
+.payment-class{
+  align-items: center;
+  display: flex;
+  justify-content: center; 
+}
+#summary{
+  width: 400px;
+ 
+}
+.payment-radio{
+  
+  display: flex;
+  position: relative;
+
+}
+.sum-form-data {
+  display: flex;
+
+}

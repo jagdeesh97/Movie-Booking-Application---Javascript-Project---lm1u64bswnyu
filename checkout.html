@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+    <h1 id="checkHeading">Checkout</h1>
+    <div class="payment-class">
+        <form id="formBody">
+            <h1>Summary</h1>
+            <h3>Black Adam</h3>
+            <div class="sum-form-data">
+                <p>classic Ticket</p>
+                <p class="ms-auto">₹ 250</p>
+            </div>
+            <label>Number of tickets</label><input type="number" aria-label="First name" class="form-control">
+            <div class="sum-form-data">
+                <p>Convenience Fee (1.75%)</p>
+                <p class="ms-auto">₹ 8.78</p>
+            </div>
+            <div class="sum-form-data">
+                <p>Sub total</p>
+                <p class="ms-auto">₹ 582</p>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                    data-bs-target="#proceedToPay">Proceed to pay</button>
+            </div>
+        </form>
+
+        <div class="modal fade" id="proceedToPay" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Payment</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="input-group">
+                                <label>First name</label>
+                                <input type="text" class="form-control ms-1 me-1">
+                                <label>Last name</label>
+                                <input type="text" class="form-control ms-1 me-1">
+                                <label>Email</label>
+                                <input type="email" class="form-control ms-1" placeholder="you@example.com">
+                            </div>
+                            <div class="payment-radio">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pay-type" id="pay1">
+                                    <label class="form-check-label">Credit card</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input ms-1" type="radio" name="pay-type" id="pay2">
+                                    <label class="form-check-label ms-1">Debit card</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input ms-1" type="radio" name="pay-type" id="pay3">
+                                    <label class="form-check-label ms-1">UPI</label>
+                                </div>
+                            </div>
+                            <div>
+                                <label> Name on card</label>
+                                <input type="text" class="form-control">
+                                <figcaption class="figure-caption">Full name as displayed on card</figcaption>
+                            </div>
+                            <div>
+                                <label>Credit card number</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div>
+                                <label>Expiration</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div>
+                                <label>CVV</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <br>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button">Pay Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./App.js"></script>
+    <script src="./bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+
+<body>
+  <!-- Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Movies App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="row">
+      <div class="col-lg-2 col-md-2 left-section" id="genre"></div>
+      <div class="col-lg-10 col-md-10 card-border">
+        <h2 id="nowPlaying">Now Playing</h2>
+        <div id="poster" class="row row-cols-2 row-cols-md-4 row-cols-lg-4 g-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./App.js"></script>
+  <script src="./bootstrap.js"></script>
+</body>
+
+</html>
